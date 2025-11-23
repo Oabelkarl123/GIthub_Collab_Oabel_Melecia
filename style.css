@@ -3,21 +3,21 @@
 
 :root {
     --base-color: #ffffff;
-    --text-color-1: #0b871e;
-    --text-color-2: #000000;
+    --text-color-1: #056413;
+    --text-color-2: #015503;
     --primary-color: #ffc06e;
     --secondary-color: #8d8dFF;
     --color-1: #f9f6f3;
     --color-2: #f3f7f9;
     --color-3: #f3f7f9;
 }
-
+/* Universal */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* For all text fonts */
 html {
     font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color-1);
@@ -112,4 +112,53 @@ h1 {
 
 .secondary {
     background-color: var(--secondary-color);
+}
+
+.grid-container {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas: 
+    "img-1 img-1 img-2 img-2"
+    "img-3 img-3 img-4 img-4";
+    gap: 1em;
+}
+
+.grid-container img{
+    height: 100%;
+    font-weight: 100%;
+    border-radius: .5em;
+    transition: 100ms ease;
+}
+
+.grid-container img:hover {
+    scale: 1.05;
+}
+
+/*Pictures of Plains with hover*/
+.grid-container-2 {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas: 
+    "img-5 img-5 img-6 img-6"
+    "img-7 img-7 img-8 img-8";
+    gap: 1em;
+}
+
+.grid-container-2 img{
+    height: 100%;
+    font-weight: 100%;
+    border-radius: .5em;
+    transition: 100ms ease;
+}
+
+.grid-container-2 img:hover {
+    scale: 1.05;
 }
